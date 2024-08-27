@@ -2,7 +2,7 @@ import React from 'react'
 
 function Dashboar() {
   return (
-    <div style={{height: '1000px'}}>Dashboar</div>
+    <div style={{height: '3000px'}}>Dashboar</div>
   )
 }
 
