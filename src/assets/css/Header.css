@@ -1,0 +1,149 @@
+/* Kích thước logo */
+.navbar-brand img {
+  width: 60px;
+}
+
+.nav-link.active {
+  color: #007bff !important; /* Màu sắc của lớp active */
+}
+
+/* Khoảng cách giữa các nav item */
+.navbar-nav .nav-link {
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link:last-child {
+  margin-right: 0;
+}
+
+/* Loại bỏ hình tam giác của dropdown Messenger */
+#dropdown-messenger .dropdown-toggle::after {
+  display: none;
+}
+
+/* Loại bỏ hình tam giác của dropdown Notify */
+#dropdown-notify .dropdown-toggle::after {
+  display: none;
+}
+
+/* Loại bỏ khoảng cách giữa dropdown menu và icon */
+#dropdown-messenger .dropdown-menu,
+#dropdown-notify .dropdown-menu {
+  margin-top: 0;
+}
+
+/* Loại bỏ padding, border, và box-shadow của dropdown icon */
+#dropdown-messenger .dropdown-toggle,
+#dropdown-notify .dropdown-toggle {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+/* Nền tròn cho các icon trong Messenger và Notify */
+#dropdown-messenger .dropdown-toggle,
+#dropdown-notify .dropdown-toggle {
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  color: black;
+  padding: 8px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Màu nền khi hover */
+#dropdown-messenger .dropdown-toggle:hover,
+#dropdown-notify .dropdown-toggle:hover {
+  background-color: #e9ecef;
+}
+
+/* Canvas Sidebar */
+.canvas-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%; /* Chiếm toàn bộ chiều rộng trên mobile */
+  max-width: 250px; /* Chiều rộng tối đa trên màn hình lớn hơn */
+  background-color: #f8f9fa;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.canvas-sidebar.show {
+  transform: translateX(0);
+}
+
+.canvas-sidebar .canvas-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.canvas-sidebar .nav-link {
+  padding: 10px 15px;
+}
+
+/* Ẩn sidebar canvas trên màn hình lớn */
+@media (min-width: 992px) {
+  .canvas-sidebar {
+    display: none;
+  }
+}
+
+/* Điều chỉnh thanh tìm kiếm trên tablet và mobile */
+@media (max-width: 991px) {
+  .search-bar {
+    max-width: none; /* Đặt max-width cho thanh tìm kiếm trên mobile */
+    width: 100%; /* Chiếm toàn bộ chiều rộng trên mobile */
+  }
+}
+
+/* Điều chỉnh nút mở canvas trên mobile */
+@media (max-width: 767px) {
+  .navbar-toggler {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10000; /* Đảm bảo nút mở canvas ở trên cùng */
+  }
+  .canvas-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; /* Chiếm toàn bộ chiều rộng trên mobile */
+    max-width: 100%; /* Chiều rộng tối đa trên màn hình lớn hơn */
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 9999;
+    padding: 20px;
+  }
+}
+/* Ẩn nút đóng (dấu x) trên canvas khi ở màn hình di động */
+@media (max-width: 767px) {
+  .canvas-sidebar .canvas-close {
+    display: none; /* Ẩn nút đóng trên mobile */
+  }
+
+  /* Di chuyển thanh tìm kiếm vào trong canvas */
+  .canvas-sidebar .search-bar {
+    display: block; /* Hiển thị thanh tìm kiếm trong canvas */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    margin-top: 20px; /* Khoảng cách từ phía trên */
+  }
+}
+
+#dropdown-menu-link {
+  text-decoration: none;
+  color: black;
+  border: #d9d9d9 solid 1px;
+}

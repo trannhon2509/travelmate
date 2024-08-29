@@ -1,0 +1,9 @@
+.sidebar-calendar {
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .sidebar-calendar .react-calendar {
+    width: 100%;
+  }
+  

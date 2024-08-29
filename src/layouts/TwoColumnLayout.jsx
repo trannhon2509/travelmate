@@ -8,10 +8,10 @@ function TwoColumnLayout({ children }) {
       <Container fluid className="layout-container">
         <header className="header"><Header/></header>
         <Row className="main-content">
-          <Col className="sidebar" md={3}>
+          <Col className="sidebar" md={2}>
             Sidebar
           </Col>
-          <Col className="center" md={9}>
+          <Col className="center" md={10}>
             {children}
           </Col>
         </Row>

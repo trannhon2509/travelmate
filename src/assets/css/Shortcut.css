@@ -1,0 +1,31 @@
+.shortcut-card {
+    /* Bỏ hiệu ứng shadow */
+    border: 0px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .shortcut-card:hover {
+    background-color: #f8f9fa; /* Màu nền khi hover */
+    transform: scale(1.02); /* Phóng to nhẹ khi hover */
+  }
+  
+  .shortcut-icon {
+    color: #007bff; /* Màu sắc biểu tượng */
+    transition: color 0.3s ease;
+  }
+  
+  .shortcut-card:hover .shortcut-icon {
+    color: #0056b3; /* Màu sắc biểu tượng khi hover */
+  }
+  
+  .shortcut-title {
+    color: #333; /* Màu chữ tiêu chuẩn */
+    transition: color 0.3s ease;
+  }
+  
+  .shortcut-card:hover .shortcut-title {
+    color: #007bff; /* Màu chữ khi hover */
+  }
+  
